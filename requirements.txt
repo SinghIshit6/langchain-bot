@@ -3,3 +3,4 @@ unstructured
 sentence_transformers
 faiss-cpu
 openai
+python-dotenv
