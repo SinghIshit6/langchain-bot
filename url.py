@@ -9,8 +9,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import bot_template, user_template, css
-
-os.environ["OPENAI_API_KEY"] = "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"
+from dotenv import load_dotenv
 
 def load_urls(urls):
     loaders=UnstructuredURLLoader(urls=urls)
@@ -79,7 +78,7 @@ def load_urls_from_file():
     return url_list
 
 def main():
-
+    load_dotenv()
     st.set_page_config(page_title="QnA ChatBot",
                        page_icon=":book:")
     st.write(css,unsafe_allow_html=True)
