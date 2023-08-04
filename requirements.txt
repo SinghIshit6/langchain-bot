@@ -2,3 +2,4 @@ langchain
 unstructured
 sentence_transformers
 faiss-cpu
+openai
