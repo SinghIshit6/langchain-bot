@@ -1,0 +1,3 @@
+langchain
+unstructured
+sentence_transformers
