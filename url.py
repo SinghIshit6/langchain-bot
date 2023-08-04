@@ -10,7 +10,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import bot_template, user_template, css
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 def load_urls(urls):
     loaders=UnstructuredURLLoader(urls=urls)
